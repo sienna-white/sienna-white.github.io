@@ -21,10 +21,22 @@ layout: default
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
 
-    <div class="page__inner-wrap">
+    {% case page.accent %}
+      {% when "pink" %}{% assign accent_color = "var(--accent-pink)" %}
+      {% when "green" %}{% assign accent_color = "var(--accent-green)" %}
+      {% when "orange" %}{% assign accent_color = "var(--accent-orange)" %}
+      {% when "yellow" %}{% assign accent_color = "var(--accent-yellow)" %}
+      {% else %}{% assign accent_color = "var(--accent-blue)" %}
+    {% endcase %}
+
+    <div class="page__inner-wrap" style="border-left: 5px solid {{ accent_color }}; padding-left: 1.25em;">
       <header>
         {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
-        {% if page.status %}<p class="page__meta"><strong>Status:</strong> {{ page.status }}</p>{% endif %}
+        {% if page.status %}
+          <p>
+            <span style="display:inline-block; padding: 0.15em 0.75em; border-radius: 999px; border: 1.5px solid {{ accent_color }}; background: color-mix(in srgb, {{ accent_color }} 12%, white); color: var(--text-color); font-size: 0.85em; font-weight: bold;">{{ page.status }}</span>
+          </p>
+        {% endif %}
         <p class="page__meta"><a href="{{ base_path }}/research/">&larr; Back to all research projects</a></p>
       </header>
 

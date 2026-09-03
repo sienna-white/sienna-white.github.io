@@ -11,11 +11,11 @@ author_profile: true
 
 {% assign sorted_research = site.research | sort: "order" %}
 
-<nav class="research-toc" aria-label="Table of contents" style="background: #f7f7f7; border-radius: 8px; padding: 1em 1.5em; margin: 1.5em 0;">
-  <strong>Contents</strong>
-  <ol style="margin-top: 0.5em; margin-bottom: 0;">
+<nav class="research-toc" aria-label="Table of contents" style="background: color-mix(in srgb, var(--accent-yellow) 15%, white); border-left: 5px solid var(--accent-yellow); border-radius: 8px; padding: 1em 1.5em; margin: 1.5em 0;">
+  <strong style="color: var(--text-color);">Contents</strong>
+  <ol style="margin-top: 0.5em; margin-bottom: 0; color: var(--text-color);">
     {% for post in sorted_research %}
-      <li><a href="#{{ post.slug }}">{{ post.title }}</a>{% if post.status %} &mdash; <span style="color:#888;">{{ post.status }}</span>{% endif %}</li>
+      <li><a href="#{{ post.slug }}">{{ post.title }}</a>{% if post.status %} &mdash; <span style="font-style: italic;">{{ post.status }}</span>{% endif %}</li>
     {% endfor %}
   </ol>
 </nav>

@@ -2,6 +2,24 @@
 
 <!-- start custom head snippets -->
 
+<!--
+  Site accent palette, as CSS custom properties.
+  Also mirrored as Sass variables in _sass/_variables.scss (which drives
+  buttons, links, and the nav). Change a value in BOTH places to re-theme
+  the site -- this block feeds the hand-styled bits of the Research,
+  Teaching, and CV pages that use inline `style="...var(--accent-...)"`.
+-->
+<style>
+  :root {
+    --accent-blue: #3B4FBF;
+    --accent-pink: #BF3467;
+    --accent-green: #9ABF15;
+    --accent-orange: #F29F05;
+    --accent-yellow: #F2E205;
+    --text-color: #000000;
+  }
+</style>
+
 <link rel="apple-touch-icon" sizes="57x57" href="{{ base_path }}/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
 <link rel="apple-touch-icon" sizes="60x60" href="{{ base_path }}/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
 <link rel="apple-touch-icon" sizes="72x72" href="{{ base_path }}/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">

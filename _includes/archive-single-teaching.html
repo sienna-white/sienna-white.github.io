@@ -16,7 +16,7 @@
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>{% endif %}
 
     {% if post.materials %}
-      <ul style="margin-top: 0.25em;">
+      <ul style="margin-top: 0.25em; border-left: 3px solid var(--accent-orange); padding-left: 1em; list-style: none; margin-left: 0;">
         {% for item in post.materials %}
           <li><a href="{{ item.file | prepend: base_path }}" target="_blank" rel="noopener"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> {{ item.label }}</a></li>
         {% endfor %}

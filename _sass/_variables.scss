@@ -47,6 +47,19 @@ $type-size-8                : 0.625em;  // ~10px
    Colors
    ========================================================================== */
 
+/* --------------------------------------------------------------------------
+   Site accent palette
+   These five colors are the whole theme. Change a hex value here (and the
+   matching one in _includes/head/custom.html, which exposes the same
+   palette as CSS custom properties for the hand-styled bits of the
+   Research/Teaching/CV pages) to re-theme the entire site from one place.
+   -------------------------------------------------------------------------- */
+$accent-blue                : #3B4FBF;
+$accent-pink                : #BF3467;
+$accent-green                : #9ABF15;
+$accent-orange               : #F29F05;
+$accent-yellow                : #F2E205;
+
 $gray                       : #7a8288;
 $dark-gray                  : mix(#000, $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
@@ -57,14 +70,17 @@ $body-color                 : #fff;
 $background-color           : #fff;
 $code-background-color      : #fafafa;
 $code-background-color-dark : $light-gray;
-$text-color                 : $dark-gray;
+$text-color                 : #000000;
 $border-color               : $lighter-gray;
 
-$primary-color              : #7a8288;
-$success-color              : #62c462;
-$warning-color              : #f89406;
-$danger-color               : #ee5f5b;
-$info-color                 : #52adc8;
+/* $primary-color and $info-color are the two accents dark enough to carry
+   white button text at a readable contrast; $success-color and
+   $warning-color are handled with black text instead (see _buttons.scss). */
+$primary-color              : $accent-blue;
+$success-color               : $accent-green;
+$warning-color               : $accent-orange;
+$danger-color                : $accent-pink;
+$info-color                  : $accent-pink;
 
 /* brands */
 $behance-color              : #1769FF;
@@ -90,7 +106,7 @@ $xing-color                 : #006567;
 
 
 /* links */
-$link-color                 : $info-color;
+$link-color                 : $accent-blue;
 $link-color-hover           : mix(#000, $link-color, 25%);
 $link-color-visited         : mix(#fff, $link-color, 25%);
 $masthead-link-color        : $primary-color;

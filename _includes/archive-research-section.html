@@ -1,14 +1,24 @@
 {% include base_path %}
 
-<section id="{{ post.slug }}" class="archive__item research-project" style="margin-bottom: 3em; padding-bottom: 2em; border-bottom: 1px solid #eee;">
+{% case post.accent %}
+  {% when "pink" %}{% assign accent_color = "var(--accent-pink)" %}
+  {% when "green" %}{% assign accent_color = "var(--accent-green)" %}
+  {% when "orange" %}{% assign accent_color = "var(--accent-orange)" %}
+  {% when "yellow" %}{% assign accent_color = "var(--accent-yellow)" %}
+  {% else %}{% assign accent_color = "var(--accent-blue)" %}
+{% endcase %}
 
-  <h2 class="archive__item-title" itemprop="headline" style="margin-bottom: 0.25em;">
+<section id="{{ post.slug }}" class="archive__item research-project" style="margin-bottom: 2em; padding: 0.25em 0 1.75em 1.25em; border-left: 5px solid {{ accent_color }};">
+
+  <h2 class="archive__item-title" itemprop="headline" style="margin-bottom: 0.25em; color: var(--text-color);">
     {{ post.title }}
     <a href="{{ base_path }}{{ post.url }}" rel="permalink" title="Link to this project"><i class="fa fa-link" aria-hidden="true"></i><span class="sr-only">Permalink</span></a>
   </h2>
 
   {% if post.status %}
-    <p class="page__meta" style="margin-top:0;"><strong>Status:</strong> {{ post.status }}</p>
+    <p style="margin-top:0;">
+      <span style="display:inline-block; padding: 0.15em 0.75em; border-radius: 999px; border: 1.5px solid {{ accent_color }}; background: color-mix(in srgb, {{ accent_color }} 12%, white); color: var(--text-color); font-size: 0.85em; font-weight: bold;">{{ post.status }}</span>
+    </p>
   {% endif %}
 
   {% if post.figure %}

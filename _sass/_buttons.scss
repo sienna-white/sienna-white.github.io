@@ -76,21 +76,28 @@
   }
 
   /* warning */
+  /* $warning-color (accent-orange) is light, so white button text from
+     the base .btn rule fails contrast -- force black text here instead. */
 
   &--warning {
+    color: #000 !important;
     background-color: $warning-color;
 
     &:hover {
+      color: #000 !important;
       background-color: mix(#000, $warning-color, 20%);
     }
   }
 
   /* success */
+  /* $success-color (accent-green) is light -- same black-text override. */
 
   &--success {
+    color: #000 !important;
     background-color: $success-color;
 
     &:hover {
+      color: #000 !important;
       background-color: mix(#000, $success-color, 20%);
     }
   }
