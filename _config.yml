@@ -10,10 +10,10 @@ locale                   : "en-US"
 title                    : "Sienna White"
 title_separator          : "-"
 name                     : &name "Sienna White"
-description              : &description "Ph.D. student at UC Berkeley, interested in air pollution modeling, data assimilation, and hydrodynamics."
+description              : &description "Ph.D. candidate, UC Berkeley"
 url                      : "https://sienna-white.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "sienna-white/sienna-white.github.io"
 teaser                   :  "headshot.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "siennarwhite"
+  github           : "sienna-white"
   google_plus      :
   keybase          :
   instagram        :
