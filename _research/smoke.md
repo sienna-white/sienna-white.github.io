@@ -5,7 +5,6 @@ permalink: /research/smoke/
 slug: smoke
 excerpt: "Data assimilation for a high-resolution PM2.5 analysis dataset"
 order: 2
-status: "Published"
 accent: "pink"
 figure: "/images/500x300.png"
 figure_caption: "Figure 1: Replace this placeholder with a key figure, schematic, or result from this project."

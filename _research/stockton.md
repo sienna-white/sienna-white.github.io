@@ -5,7 +5,6 @@ permalink: /research/stockton/
 slug: stockton
 excerpt: "An observational campaign of diurnal stratification in the Stockton Channel, CA"
 order: 4
-status: "Ongoing"
 accent: "orange"
 figure: "/images/500x300.png"
 figure_caption: "Figure 1: Replace this placeholder with a key figure, schematic, or result from this project (drop the image in the images/ folder and update the figure path above)."

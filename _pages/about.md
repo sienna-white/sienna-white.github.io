@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Hi! Welcome to my website!"
+title: "Hello!"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,9 +8,18 @@ redirect_from:
   - /about.html
 ---
 
-Hi there! My name is Sienna White and I am a Ph.D. student at UC Berkeley (2021 - 2026, hopefully!), working with Professor Mark Stacey. I've written up some of my research experience below. For a more formal CV, [see here](https://drive.google.com/file/d/10ZswhyKxlEqKLYjipjIxt-n_O4ZbNFf8/view?usp=sharing). I'm grateful to be funded by the Computational Science Graduate Fellowship through DOE. Please feel free to reach out to me at any time (thoughts on research! potential collaboration! application review for the CSGF! egregious typos on this site!) at _sienna w at berkeley dot edu_ .
+Hi there! 
 
-**RESEARCH EXPERIENCES:**
+My name is Sienna White and I am a Ph.D. student at UC Berkeley (2022 - 2027), advised by Professor Mark Stacey. I've written up some of my research experience below. 
+
+I'm grateful to be funded by the Computational Science Graduate Fellowship through the Department of Energy. Please feel free to reach out to me at any time (thoughts on research! potential collaboration! application review for the CSGF! egregious typos on this site!) at _sienna w at berkeley dot edu_ .
+
+Before starting graduate school, I worked at the San Francisco Estuary Institute on the [Clean Water](https://www.sfei.org/programs/projects#) program under Dr. David Senn. Our team used computational models to study nutrient cycling and primary productivity in the Bay Area. We maintained two DFlow-FM hydrodynamic models of San Francisco Bay (one focused on resolving the Sacramento-San Joaquin Delta) coupled to an offline  biogeochemical module (Delft Water Quality, also known as DELWAQ). My work focused mainly on calibrating and validating our model(s) for a range of water years, as well as post-processing model results to communicate with stakeholders.  
+
+Our work is publicly available, but it's ocassinally hard to find, so please reach out if you have any questions or want to learn more -- our work is open source and I'm happy to talk about San Francisco Bay dynamics anytime. 
+
+
+<!-- **RESEARCH EXPERIENCES:**
 ----
 
 <span style="color:RebeccaPurple">Predicting harmful algal blooms in the Sacramento-San Joaquin Delta (Dissertation Research)</span>
@@ -24,48 +33,37 @@ My PhD research will focus on using numerical models to investigate the specific
 
 
 
-----
-
-Before starting grad school at Berkeley, I worked for two years at the San Francisco Estuary Institute on the [Clean Water](https://www.sfei.org/programs/projects#) program under Dr. David Senn. Our team used computational models to study nutrient cycling and primary productivity in the Bay Area. We maintained two DFlow-FM hydrodynamic models of San Francisco Bay (one focused on resolving the Sacramento-San Joaquin Delta) coupled to an offline  biogeochemical module (Delft Water Quality, also known as DELWAQ). My work focused mainly on calibrating and validating our model(s) for a range of water years, as well as post-processing model results to communicate with stakeholders.  
-
-Our work is publicly available here and here, but it's ocassinally hard to find, so please reach out if you have any questions or want to learn more -- our work is open source and I'm happy to talk about San Francisco Bay dynamics truly anytime ! 
+---- -->
 
 
 
 
+<!-- 
 
 Sediment transport in San Francisco Bay
 ----
 
 
  * link honors thesis 
-
+ -->
 
 ![Fieldwork on San Francisco Bay ](/images/IMG_6533.jpg){width=800px}
 
 
 
- I'm interested in environmental fluid mechanics, computational fluid modeling, estuarine physics, sediment dynamics ....  benthic grazers ... etc. I finally got around to making a website, so if you found your way here, either on purpose or accident, I'm glad you made it! Feel free to reach out. 
+ <!-- I'm interested in environmental fluid mechanics, computational fluid modeling, estuarine physics, sediment dynamics ....  benthic grazers ... etc. I finally got around to making a website, so if you found your way here, either on purpose or accident, I'm glad you made it! Feel free to reach out.  -->
 
 
-
+<!-- 
 
 
 Hi there! My name is Sienna White and I am a Ph.D. student at UC Berkeley, working with Professor [Tina Chow](https://chow.ce.berkeley.edu/) on data assimilation for smoke modeling. I'm interested in environmental fluid mechanics, computational fluid modeling, estuarine physics, sediment dynamics ....  benthic grazers ... etc. 
 
-Before I started my PhD at Berkeley, I worked for two years at the San Francisco Estuary Institute on the Clean Water team under Dr. David Senn. At SFEI, I used computational models to study nutrient cycling and primary productivity in the Bay Area. We ran our hydrodynamic model using DFlow-FM and our biogeochemical module was coupled offline using Delft Water Quality (DELWAQ). Our work is publicly available here and here, but it's ocassinally hard to find, so please reach out if you have any questions or want to learn more -- our work is open source and I'm happy to talk about San Francisco Bay dynamics truly anytime ! 
+Before I started my PhD at Berkeley, I worked for two years at the San Francisco Estuary Institute on the Clean Water team under Dr. David Senn. At SFEI, I used computational models to study nutrient cycling and primary productivity in the Bay Area. We ran our hydrodynamic model using DFlow-FM and our biogeochemical module was coupled offline using Delft Water Quality (DELWAQ). Our work is publicly available here and here, but it's ocassinally hard to find, so please reach out if you have any questions or want to learn more -- our work is open source and I'm happy to talk about San Francisco Bay dynamics truly anytime !  -->
 
 
 
-
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
-
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over -- just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
-
-
-
+<!-- 
 
 
 Getting started
@@ -116,4 +114,4 @@ Example: editing a markdown file for a talk
 
 For more info
 ------
-More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful. -->
