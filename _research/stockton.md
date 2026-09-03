@@ -3,7 +3,7 @@ title: "Stockton: A Short, Descriptive Title"
 collection: research
 permalink: /research/stockton/
 slug: stockton
-excerpt: "One or two sentences summarizing this project for the table of contents and any listings."
+excerpt: "An observational campaign of diurnal stratification in the Stockton Channel, CA"
 order: 4
 status: "Ongoing"
 accent: "orange"

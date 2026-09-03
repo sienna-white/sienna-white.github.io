@@ -3,7 +3,7 @@ title: "Project Two: A Short, Descriptive Title"
 collection: research
 permalink: /research/smoke/
 slug: smoke
-excerpt: "Data assimilation for high-resolution air quality analysis"
+excerpt: "Data assimilation for a high-resolution PM2.5 analysis dataset"
 order: 2
 status: "Published"
 accent: "pink"

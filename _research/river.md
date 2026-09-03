@@ -1,9 +1,9 @@
 ---
-title: "River morphology (Technische Universiteit Delft)"
+title: "River morphology"
 collection: research
 permalink: /research/river/
 slug: river
-excerpt: "One or two sentences summarizing this project for the table of contents and any listings."
+excerpt: "Fulbright research project at Technische Universiteit Delft"
 order: 3
 # status: ""
 accent: "green"

@@ -1,11 +1,10 @@
 ---
-title: "Sediment: A Short, Descriptive Title"
+title: "Modeling cohesive sediment in San Francisco Bay"
 collection: research
 permalink: /research/sediment/
 slug: sediment
-excerpt: "One or two sentences summarizing this project for the table of contents and any listings."
+excerpt: "Can inverse methods like the ensemble Kalman filter help constrain uncertain parameterizations?"
 order: 5
-status: "Ongoing"
 accent: "yellow"
 figure: "/images/500x300.png"
 figure_caption: "Figure 1: Replace this placeholder with a key figure, schematic, or result from this project (drop the image in the images/ folder and update the figure path above)."

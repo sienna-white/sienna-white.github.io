@@ -3,9 +3,8 @@ title: "Estimating phytoplankton growth in a low-energy channel using an adjoint
 collection: research
 permalink: /research/adjoint/
 slug: adjoint
-excerpt: "One or two sentences summarizing this project for the table of contents and any listings."
+excerpt: ""
 order: 4
-status: 
 accent: "orange"
 github: "https://github.com/sienna-white/your-repo-name"
 paperurl: "https://doi.org/xxxxxxx"

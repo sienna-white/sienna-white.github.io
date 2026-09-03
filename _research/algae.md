@@ -3,9 +3,8 @@ title: "What causes harmful algal blooms in the Sacramento-San Joaquin Delta?"
 collection: research
 permalink: /research/algae/
 slug: algae
-excerpt: "One or two sentences summarizing this project for the table of contents and any listings."
+excerpt: "High-level summary of my dissertation goals"
 order: 1
-status: "Ongoing"
 accent: "blue"
 figure: "/images/500x300.png"
 figure_caption: "Figure 1: Replace this placeholder with a key figure, schematic, or result from this project (drop the image in the images/ folder and update the figure path above)."
