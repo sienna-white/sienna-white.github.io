@@ -1,0 +1,126 @@
+% ============================================================
+%  Starter LaTeX CV template for siennarwhite.github.io
+%
+%  HOW TO USE:
+%   1. Edit this file directly (or paste in your own LaTeX CV
+%      and keep the \begin{document}/\end{document} wrapper).
+%   2. Compile it to a PDF -- either:
+%        - locally:  pdflatex cv-template.tex
+%        - or on Overleaf: upload this file, hit "Recompile",
+%          then "Download PDF"
+%   3. Rename the resulting PDF to "cv.pdf" and replace the file
+%      at  files/cv.pdf  in the website repo with it.
+%   4. Commit + push. The CV page (/cv/) always embeds whatever
+%      PDF lives at files/cv.pdf, so no other changes are needed.
+%
+%  This file is NOT read by the website directly -- Jekyll/GitHub
+%  Pages cannot compile LaTeX. It's kept here purely as your
+%  editable source so the compiled PDF and the source travel
+%  together in the same repo.
+% ============================================================
+
+\documentclass[11pt]{article}
+\usepackage[margin=0.85in]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[T1]{fontenc}
+
+\hypersetup{colorlinks=true, urlcolor=blue, linkcolor=blue}
+\setlist[itemize]{leftmargin=1.2em, itemsep=2pt, topsep=2pt}
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{6pt}
+\pagestyle{empty}
+
+\newcommand{\entry}[3]{%
+  \noindent\textbf{#1} \hfill #2 \\
+  \textit{#3}\par\smallskip
+}
+
+\begin{document}
+
+% ---------- Header ----------
+\begin{center}
+  {\LARGE \textbf{Sienna White}}\\[2pt]
+  Berkeley, California \quad $\vert$ \quad
+  \href{mailto:siennaw@berkeley.edu}{siennaw@berkeley.edu} \quad $\vert$ \quad
+  \href{https://siennarwhite.github.io/}{siennarwhite.github.io} \quad $\vert$ \quad
+  \href{https://github.com/siennarwhite}{github.com/siennarwhite}
+\end{center}
+
+% ---------- Research Experience ----------
+\section*{Research Experience}
+
+\entry{University of California, Berkeley}{Aug 2022 -- Present}{Ph.D. Student, Environmental Engineering}
+\begin{itemize}
+  \item Working with Professor Tina Chow to develop data assimilation applications for high-resolution wildfire smoke models.
+\end{itemize}
+
+\entry{San Francisco Estuary Institute}{Sep 2020 -- Dec 2022}{Environmental Analyst}
+\begin{itemize}
+  \item Developed biogeochemical and hydrodynamic numerical models to inform management decisions for the greater Bay Area.
+\end{itemize}
+
+\entry{Technische Universiteit Delft (Fulbright Fellow)}{Sep 2019 -- Jun 2020}{Researcher in River Morphology}
+\begin{itemize}
+  \item Quantified morphological change from fixed river beds in the Waal with Rijkswaterstaat and TU Delft.
+\end{itemize}
+
+\entry{Deltares}{Jun 2018 -- Sep 2018}{Rivers Department}
+\begin{itemize}
+  \item Processed bathymetry data and experimented with methods for parametrizing bedform drag.
+\end{itemize}
+
+\entry{Environmental Fluid Mechanics Lab, Stanford}{May 2016 -- Sep 2019}{Sediment Transport Research}
+\begin{itemize}
+  \item Performed statistical analysis of sedimentation budgets for San Francisco Bay; supervised by Oliver Fringer and Joe Adelson.
+\end{itemize}
+
+% ---------- Education ----------
+\section*{Education}
+
+\entry{Stanford University}{Sep 2015 -- Jun 2019}{B.S. with Honors, Environmental Engineering}
+\begin{itemize}
+  \item Thesis: \textit{A Numerical Model for Sediment Flux and Flocculation in San Francisco Bay}.
+\end{itemize}
+
+% ---------- Skills ----------
+\section*{Skills}
+Python (incl. geospatial analysis), MATLAB, QGIS, numerical hydraulic modeling (DFlow-FM, DELWAQ), Linux/Unix, Git, UAV pilot license, technical \& long-form writing.
+
+% ---------- Publications \& Presentations ----------
+\section*{Publications \& Presentations}
+
+\textbf{Technical Reports}
+\begin{itemize}
+  \item S.R. White, et al. ``Delta--Suisun Biogeochemical Model: Calibration and Validation.'' San Francisco Estuary Institute, 2021.
+  \item S.R. White, et al. ``Nutrients in the Northern San Francisco Estuary.'' San Francisco Estuary Institute, 2021.
+\end{itemize}
+
+\textbf{Conference Presentations}
+\begin{itemize}
+  \item S.R. White, A. Blom. ``Quantifying sediment transport...'' Netherlands Centre for River Studies, 2020.
+  \item S.R. White, O.B. Fringer. ``Using D-Water Quality and D-Flow FM...'' Delta Science and Software Days, 2019.
+\end{itemize}
+
+% ---------- Awards \& Scholarships ----------
+\section*{Awards \& Scholarships}
+\begin{itemize}
+  \item Firestone Medal, top 10\% of honors theses at Stanford (2019)
+  \item 1st Place, Creative Nonfiction Prize, Stanford (2017)
+  \item Human Cities Urban Innovation Contest Finalist (2016)
+  \item US Presidential Scholar (2015)
+\end{itemize}
+
+% ---------- Other Work Experience ----------
+\section*{Other Work Experience}
+\begin{itemize}
+  \item Teaching Assistant, Stanford University (2016--2019)
+  \item Senior Producer, Stanford Storytelling Project (2016--2019)
+\end{itemize}
+
+% ---------- References ----------
+\section*{References}
+Available upon request.
+
+\end{document}

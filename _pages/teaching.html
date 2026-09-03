@@ -7,6 +7,10 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+<p>Materials from courses and workshops I've taught, organized by class. Click a linked title (e.g. "Course notes: ...") below to open the PDF.</p>
+
+{% assign sorted_teaching = site.teaching | sort: "date" | reverse %}
+
+{% for post in sorted_teaching %}
+  {% include archive-single-teaching.html %}
 {% endfor %}

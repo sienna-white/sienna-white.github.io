@@ -1,0 +1,32 @@
+{% include base_path %}
+
+<section id="{{ post.slug }}" class="archive__item research-project" style="margin-bottom: 3em; padding-bottom: 2em; border-bottom: 1px solid #eee;">
+
+  <h2 class="archive__item-title" itemprop="headline" style="margin-bottom: 0.25em;">
+    {{ post.title }}
+    <a href="{{ base_path }}{{ post.url }}" rel="permalink" title="Link to this project"><i class="fa fa-link" aria-hidden="true"></i><span class="sr-only">Permalink</span></a>
+  </h2>
+
+  {% if post.status %}
+    <p class="page__meta" style="margin-top:0;"><strong>Status:</strong> {{ post.status }}</p>
+  {% endif %}
+
+  {% if post.figure %}
+    <figure style="margin: 1em 0;">
+      <img src="{{ post.figure | prepend: base_path }}" alt="{{ post.figure_caption | default: post.title }}" style="max-width:100%; border-radius: 6px;">
+      {% if post.figure_caption %}<figcaption style="font-size: 0.85em; color: #666; margin-top: 0.5em;">{{ post.figure_caption }}</figcaption>{% endif %}
+    </figure>
+  {% endif %}
+
+  <div class="archive__item-excerpt" itemprop="text">
+    {{ post.content }}
+  </div>
+
+  {% if post.github or post.paperurl %}
+    <p style="margin-top: 1em;">
+      {% if post.github %}<a href="{{ post.github }}" class="btn btn--small"><i class="fa fa-github" aria-hidden="true"></i> Code on GitHub</a> {% endif %}
+      {% if post.paperurl %}<a href="{{ post.paperurl }}" class="btn btn--small btn--info"><i class="fa fa-file-text-o" aria-hidden="true"></i> Read the paper</a>{% endif %}
+    </p>
+  {% endif %}
+
+</section>

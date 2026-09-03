@@ -1,0 +1,25 @@
+---
+layout: archive
+title: "Research Projects"
+permalink: /research/
+author_profile: true
+---
+
+{% include base_path %}
+
+<p>An overview of my current and past research projects. Click a title below to jump straight to that project, or scroll through everything on this page. Each project also has its own shareable link (click the <i class="fa fa-link" aria-hidden="true"></i> icon next to its title).</p>
+
+{% assign sorted_research = site.research | sort: "order" %}
+
+<nav class="research-toc" aria-label="Table of contents" style="background: #f7f7f7; border-radius: 8px; padding: 1em 1.5em; margin: 1.5em 0;">
+  <strong>Contents</strong>
+  <ol style="margin-top: 0.5em; margin-bottom: 0;">
+    {% for post in sorted_research %}
+      <li><a href="#{{ post.slug }}">{{ post.title }}</a>{% if post.status %} &mdash; <span style="color:#888;">{{ post.status }}</span>{% endif %}</li>
+    {% endfor %}
+  </ol>
+</nav>
+
+{% for post in sorted_research %}
+  {% include archive-research-section.html %}
+{% endfor %}

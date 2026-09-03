@@ -43,6 +43,14 @@ layout: default
       <section class="page__content" itemprop="text">
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+
+        {% if page.slidesurl %}
+          <div style="margin-top: 1em;">
+            <a href="{{ page.slidesurl | prepend: base_path }}" class="btn btn--info" target="_blank" rel="noopener">
+              <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Slides (PDF)
+            </a>
+          </div>
+        {% endif %}
       </section>
 
       <footer class="page__meta">
