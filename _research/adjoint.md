@@ -1,14 +1,12 @@
 ---
-title: "Sediment: A Short, Descriptive Title"
+title: "Estimating phytoplankton growth in a low-energy channel using an adjoint model"
 collection: research
-permalink: /research/sediment/
-slug: sediment
+permalink: /research/adjoint/
+slug: adjoint
 excerpt: "One or two sentences summarizing this project for the table of contents and any listings."
-order: 5
-status: "Ongoing"
-accent: "yellow"
-figure: "/images/500x300.png"
-figure_caption: "Figure 1: Replace this placeholder with a key figure, schematic, or result from this project (drop the image in the images/ folder and update the figure path above)."
+order: 4
+status: 
+accent: "orange"
 github: "https://github.com/sienna-white/your-repo-name"
 paperurl: "https://doi.org/xxxxxxx"
 ---
@@ -28,8 +26,3 @@ Replace this with the governing equation, model formulation, or key result for t
 **Status & next steps.** Note here what's done, what's in progress, and what's next — useful both for visitors and for your own future reference.
 
 Use the buttons below (populated from the `github` and `paperurl` fields in this file's header) to link to your code repository and to a preprint, publication, or DOI once available.
-
-To add yet another project beyond these five, duplicate one of these files, give it a unique `permalink`, `slug`, and a new `order` number, and it will automatically appear in the table of contents and the list below on the Research Projects page. Set `accent` to "blue", "pink", "green", "orange", or "yellow" to pick which palette color marks that project.
-
-
-![Sediment plumes in San Francisco Bay](images/sediment/sediment_plumes_sfb.png)

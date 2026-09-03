@@ -67,5 +67,3 @@ For our "background field" (e.g, initial model result) we used simulations from 
 If this dataset is interesting to you, or if you'd like me to share the python repositories I developed to perform and automate this process, please reach out. 
 
 
-
-<span style="color:CadetBlue">Biogeochemical + hydrodynamic modeling with the San Francisco Estuary Institute </span>

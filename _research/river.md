@@ -38,3 +38,6 @@ Replace with the relevant formulation for this project.
 **Status & next steps.** Note what's done, what's in progress, and what's next.
 
 To add another project, duplicate one of these files, give it a unique `permalink`, `slug`, and a new `order` number, and it will automatically appear in the table of contents and the list below on the Research Projects page. Set `accent` to "blue", "pink", "green", "orange", or "yellow" to pick which palette color marks that project.
+
+
+![Before numerical modeling, scale models were used to make large-scale management decisions. Here is an image of the former Waal River scale model, which used to take up a huge swath of downtown Delft!](images/river/Schaalmodel NL rivieren in centrum Delft (Raam september 1950) (1).jpg)

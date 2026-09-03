@@ -28,3 +28,14 @@ Replace this with the governing equation, model formulation, or key result for t
 **Status & next steps.** Note here what's done, what's in progress, and what's next — useful both for visitors and for your own future reference.
 
 Use the buttons below (populated from the `github` and `paperurl` fields in this file's header) to link to your code repository and to a preprint, publication, or DOI once available.
+
+
+![Stratification](images/algae/Asset 1strat.png)
+
+
+![Development of the diurnal warm layer on August 23, 2024.](images/algae/dwl_wind_august_23.png)
+
+![Velocity data on August 9, 2024. Two-layer flow is visible.](images/algae/two_layer_flow_web_Aug09.png)
+
+![Differential heating drives baroclinic circulation in the Stockton Channel](images/algae/Asset 11.png)
+
