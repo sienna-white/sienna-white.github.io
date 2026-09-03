@@ -24,36 +24,6 @@ My PhD research will focus on using numerical models to investigate the specific
 
 
 
-
-<span style="color:DarkSeaGreen">Data assimilation for wildfire smoke models</span>
-----
-
-During my first year at UC Berkeley (2021-2022), I decided to try my hand at atmospheric modeling and was lucky enough to do so under the mentorship of [Prof. Tina Chow](https://chow.ce.berkeley.edu) and Dr. Rebecca Segrue. I worked on _"Partnering for Resilient Opportunities To Eliminate Cumulative Toxic (PROTECT) Health Effects from Wildfire PM2.5 in Environmental Justice Communities,"_ an EPA Region 9 grant involving a consortium of scientists from Berkeley, LBNL, and UCSF. The overreaching goal of this grant was to explore how long-term exposure to wildfire smoke has impacted public health in environmental justice communitiies. In order to do so, our team focused on assimilating observational data into modeled wildfire smoke fields to generate an hourly "best guess" of smoke concentrations across California from 2016-2020. These results were then passed off to public health researchers for exposure analysis. You can [learn more about the overall grant here](https://cfpub.epa.gov/ncer_abstracts/index.cfm/fuseaction/display.abstractDetail/abstract_id/11358/report/0). For me, it was a great opportunity work directly with researchers in the public health/medical space and gain a broader persepctive on the utility (and lack thereof) of numerical modeling for providing input data to other disciplines. 
-
-### Background on data assimilation
-
-Data assimilation is a statistical exercise that attempts to address the very useful question of "how can we combine observational data with model results when we know there are errors in both methods?" (If it's useful to anyone, I might come back later and add a better explanation here -- please reach out!). It's commonly employed in weather forecasting, as weather forecasts have extraordinary sensitivity to their initial condition -- so everytime you restart a weather model, it makes sense to check what your model is saying and what measurements-on-the-ground report. I found this [paper by Ahmed et al. (2020)](https://www.osti.gov/pages/servlets/purl/1737509) to be a very accessible, well-explained walkthrough on what this looks like mathematically.  
-
-As it turns out, unbeknownest to me, meteorologists have mastered data assimilation for both static fields (e.g., generating intial conditions) with all sorts of data, including satellite irradiance and weather balloon data with a host of methodologies (3-D Var, Ensemble Kalman Filter, etc) Beyond looking at a snapshot in time, there's also a data assimilation practice known as "4D-Var" which incorporates observational data into a model as it's running. For this exercise, I stuck to the simplest possible implementation of data assimilation, and with the very patient guidance of our collaborators at NOAA was able to deploy the Gridpoint Statistical Interpolation tool (GSI) for 3D-Var assimilation.
-
-
-![HRRR-Smoke model field plotted alongside EPA AirNow sensor data.](/images/HRRR-Smoke concentration plotted with AQS obs data at November 09, 2018 at 09_00 (before DA).png)
-
-
-### Our methodology
-
-For our "background field" (e.g, initial model result) we used simulations from HRRR-Smoke, an implementation of the high-resolution rapid refresh model that includes smoke as a tracer. We started with raw GRIB2 model output and used WPS/WRF utilites to prepare an input file for GSI. Most of this work involved developing efficient pipelines for processing enormous quantities of data. We then assimilated observational data from EPA AirNow sensors as well as Purple Air. (One ongoing question of this research involves how best to quantify the observational error in Purple Air sensors when assimilation these data into the modeled smoke field.) You can see an example of this assimilated smoke field here. 
-
-
-
-![Results of data assimilation on the wildfire smoke / PM2.5 field](/images/Comparing pre v post assimilation PM25 at November 09, 2018 at 09_00.png)
-
-
-If this dataset is interesting to you, or if you'd like me to share the python repositories I developed to perform and automate this process, please reach out. 
-
-
-
-<span style="color:CadetBlue">Biogeochemical + hydrodynamic modeling with the San Francisco Estuary Institute </span>
 ----
 
 Before starting grad school at Berkeley, I worked for two years at the San Francisco Estuary Institute on the [Clean Water](https://www.sfei.org/programs/projects#) program under Dr. David Senn. Our team used computational models to study nutrient cycling and primary productivity in the Bay Area. We maintained two DFlow-FM hydrodynamic models of San Francisco Bay (one focused on resolving the Sacramento-San Joaquin Delta) coupled to an offline  biogeochemical module (Delft Water Quality, also known as DELWAQ). My work focused mainly on calibrating and validating our model(s) for a range of water years, as well as post-processing model results to communicate with stakeholders.  
@@ -62,15 +32,6 @@ Our work is publicly available here and here, but it's ocassinally hard to find,
 
 
 
-
-<span style="color:RosyBrown">River morphology @ TU Delft </span>
-----
-From 2019-2020 I was awarded a Fulbright to perform river morphology research at the Technische Universiteit Delft with Prof. Astrid Blom. I worked on a project examining the effect of fixed beds (an engineering river intervention) on wide-scale morphodynamics on the Waal River using computational geospatial analysis in Python, QGIS, and MATLAB. This project involved close collaboration with Rijkswaterstaat, the Dutch water ministry. You can read my [final report here](https://drive.google.com/file/d/1osy5mdc5EqUEFSjSawR-8azGdUZRpa88/view?usp=sharing)
- 
-
-![Labeled fixed bed](/images/radius_NM_annotation.png)
-
-![Fieldwork on San Francisco Bay ](/images/nijmegen_pic_stand_1.jpg)
 
 
 Sediment transport in San Francisco Bay

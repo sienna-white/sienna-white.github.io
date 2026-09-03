@@ -14,7 +14,7 @@ description              : &description "Ph.D. candidate, UC Berkeley"
 url                      : "https://sienna-white.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "sienna-white/sienna-white.github.io"
-teaser                   :  "headshot.png"
+teaser                   :  "IMG_1491.JPG"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
@@ -57,7 +57,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : 
 facebook:
   username               :
   app_id                 :
@@ -73,7 +73,7 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               :  "false" #"google-universal" # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          :
 
@@ -81,41 +81,18 @@ analytics:
 # Site Author
 author:
   name             : "Sienna White"
-  avatar           : "headshot.jpeg" 
-  bio              : "Ph.D. student in environmental engineering"
+  avatar           : "IMG_1491.jpg" 
+  bio              : "Ph.D. candidate, Environmental Engineering"
   location         : "Berkeley, California"
-  employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+  googlescholar    : "https://scholar.google.com/citations?user=RISRFl8AAAAJ&hl=en"
   email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
-  uri              :
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         :
-  foursquare       :
   github           : "sienna-white"
-  google_plus      :
-  keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
   orcid            : "http://orcid.org/yourorcidurl"
-  pinterest        :
-  soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
-  steam            :
-  tumblr           :
-#  twitter          : "replacethistwitterhandle"
-  vine             :
-  weibo            :
-  xing             :
-  youtube          :
-  wikipedia        :
-
 
 # Reading Files
 include:
