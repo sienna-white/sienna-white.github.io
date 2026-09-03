@@ -430,3 +430,58 @@
     }
   }
 }
+
+
+/*
+   Masthead dropdown submenu (e.g. Research Projects)
+   ========================================================================== */
+
+.greedy-nav {
+  .has-dropdown {
+    position: relative;
+
+    > a.dropdown-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35em;
+    }
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 1rem;
+    min-width: 220px;
+    margin: 0;
+    padding: 0.5em 0;
+    list-style: none;
+    background: #fff;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    box-shadow: 0 4px 14px rgba(#000, 0.15);
+    z-index: 20;
+
+    li {
+      display: block;
+    }
+
+    a {
+      display: block;
+      margin: 0;
+      padding: 0.5em 1.25em;
+      font-weight: normal;
+      white-space: nowrap;
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  .has-dropdown:hover .dropdown-menu,
+  .has-dropdown:focus-within .dropdown-menu,
+  .has-dropdown.dropdown-open .dropdown-menu {
+    display: block;
+  }
+}

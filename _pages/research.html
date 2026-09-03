@@ -7,19 +7,22 @@ author_profile: true
 
 {% include base_path %}
 
-<p>An overview of my current and past research projects. Click a title below to jump straight to that project, or scroll through everything on this page. Each project also has its own shareable link (click the <i class="fa fa-link" aria-hidden="true"></i> icon next to its title).</p>
+<p>An overview of my current and past research projects. Click a project below to visit its own page, with full background, methods, figures, and links to code or publications.</p>
 
 {% assign sorted_research = site.research | sort: "order" %}
 
-<nav class="research-toc" aria-label="Table of contents" style="background: color-mix(in srgb, var(--accent-yellow) 15%, white); border-left: 5px solid var(--accent-yellow); border-radius: 8px; padding: 1em 1.5em; margin: 1.5em 0;">
-  <strong style="color: var(--text-color);">Contents</strong>
-  <ol style="margin-top: 0.5em; margin-bottom: 0; color: var(--text-color);">
-    {% for post in sorted_research %}
-      <li><a href="#{{ post.slug }}">{{ post.title }}</a>{% if post.status %} &mdash; <span style="font-style: italic;">{{ post.status }}</span>{% endif %}</li>
-    {% endfor %}
-  </ol>
-</nav>
-
-{% for post in sorted_research %}
-  {% include archive-research-section.html %}
-{% endfor %}
+<div class="research-index">
+  {% for post in sorted_research %}
+    {% case post.accent %}
+      {% when "pink" %}{% assign accent_color = "var(--accent-pink)" %}
+      {% when "green" %}{% assign accent_color = "var(--accent-green)" %}
+      {% when "orange" %}{% assign accent_color = "var(--accent-orange)" %}
+      {% when "yellow" %}{% assign accent_color = "var(--accent-yellow)" %}
+      {% else %}{% assign accent_color = "var(--accent-blue)" %}
+    {% endcase %}
+    <a href="{{ base_path }}{{ post.url }}" style="display:block; text-decoration:none; color: inherit; border-left: 5px solid {{ accent_color }}; border-radius: 8px; padding: 1em 1.5em; margin: 1em 0; background: color-mix(in srgb, {{ accent_color }} 6%, white);">
+      <strong style="font-size: 1.15em; color: var(--text-color);">{{ post.title }}</strong>{% if post.status %} <span style="font-style: italic; font-size: 0.85em; margin-left: 0.5em; color: var(--text-color);">&mdash; {{ post.status }}</span>{% endif %}
+      {% if post.excerpt %}<p style="margin: 0.5em 0 0; color: var(--text-color);">{{ post.excerpt }}</p>{% endif %}
+    </a>
+  {% endfor %}
+</div>

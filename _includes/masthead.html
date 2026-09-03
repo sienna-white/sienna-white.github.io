@@ -13,7 +13,23 @@
               {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            {% if link.children %}
+              <li class="masthead__menu-item has-dropdown">
+                <a href="{{ domain }}{{ link.url }}" class="dropdown-toggle">{{ link.title }} <i class="fas fa-caret-down" aria-hidden="true"></i></a>
+                <ul class="dropdown-menu">
+                  {% for child in link.children %}
+                    {% if child.url contains 'http' %}
+                      {% assign child_domain = '' %}
+                    {% else %}
+                      {% assign child_domain = base_path %}
+                    {% endif %}
+                    <li><a href="{{ child_domain }}{{ child.url }}">{{ child.title }}</a></li>
+                  {% endfor %}
+                </ul>
+              </li>
+            {% else %}
+              <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            {% endif %}
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>
@@ -21,3 +37,37 @@
     </div>
   </div>
 </div>
+
+{% comment %}
+  Minimal dropdown behavior for nav items with a submenu (e.g. Research
+  Projects). CSS alone (:hover / :focus-within) handles desktop mouse and
+  keyboard use; this script only changes behavior on touch devices, where
+  the first tap opens the submenu instead of immediately following the link.
+{% endcomment %}
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var isTouch = window.matchMedia('(hover: none)').matches;
+  if (!isTouch) return;
+
+  document.querySelectorAll('.greedy-nav .has-dropdown > a.dropdown-toggle').forEach(function (toggle) {
+    toggle.addEventListener('click', function (e) {
+      var parent = toggle.closest('.has-dropdown');
+      if (!parent.classList.contains('dropdown-open')) {
+        e.preventDefault();
+        document.querySelectorAll('.has-dropdown.dropdown-open').forEach(function (open) {
+          if (open !== parent) { open.classList.remove('dropdown-open'); }
+        });
+        parent.classList.add('dropdown-open');
+      }
+    });
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.has-dropdown')) {
+      document.querySelectorAll('.has-dropdown.dropdown-open').forEach(function (open) {
+        open.classList.remove('dropdown-open');
+      });
+    }
+  });
+});
+</script>

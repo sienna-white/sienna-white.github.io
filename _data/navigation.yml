@@ -2,6 +2,21 @@
 main:
   - title: "Research Projects"
     url: /research/
+    # Dropdown submenu -- one entry per project. Feel free to edit these
+    # titles at any time (they're independent of each project's page title);
+    # short labels read best in the menu. "Stockton" and "Sediment" are
+    # placeholders until those two projects get real titles.
+    children:
+      - title: "Harmful Algal Blooms"
+        url: /research/algae/
+      - title: "Wildfire Smoke"
+        url: /research/smoke/
+      - title: "River Morphology"
+        url: /research/river/
+      - title: "Stockton"
+        url: /research/stockton/
+      - title: "Sediment"
+        url: /research/sediment/
 
   - title: "Publications"
     url: /publications/
